@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { program } = require('commander')
 const { parseString } = require('xml2js')
 const { readFileSync } = require('fs')

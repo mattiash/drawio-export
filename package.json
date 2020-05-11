@@ -1,20 +1,31 @@
 {
-  "name": "drawio-export",
-  "version": "1.0.0",
-  "description": "Export drawio drawings from command-line",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Mattias Holmlund <mattias@holmlund.se>",
-  "license": "ISC",
-  "dependencies": {
-    "chokidar": "^3.4.0",
-    "commander": "^5.1.0",
-    "object-hash": "^2.0.3",
-    "xml2js": "^0.4.23"
-  },
-  "devDependencies": {
-    "prettier": "^2.0.5"
-  }
+    "name": "@mattiash/drawio-export",
+    "version": "1.0.0",
+    "description": "Export drawio drawings from command-line",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"No tests\"",
+        "lint": "prettier -l *.js"
+    },
+    "bin": {
+        "drawio-export": "index.js"
+    },
+    "author": "Mattias Holmlund <mattias@holmlund.se>",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/mattiash/drawio-export.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mattiash/drawio-export/issues"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "chokidar": "^3.4.0",
+        "commander": "^5.1.0",
+        "object-hash": "^2.0.3",
+        "xml2js": "^0.4.23"
+    },
+    "devDependencies": {
+        "prettier": "^2.0.5"
+    }
 }
