@@ -13,7 +13,7 @@ Options:
   -o <path>          Output path (default: "./")
   -f <format>        Output format (default: "png")
   -t                 Transparent output for png
-  -t                 Transparent output for png
+  --scale <scale>    Scale for png
   --watch            Watch input file for changes
   --width <pixels>   Fits the generated image/pdf into the specified width, preserves aspect ratio.
   --height <pixels>  Fits the generated image/pdf into the specified height, preserves aspect ratio.

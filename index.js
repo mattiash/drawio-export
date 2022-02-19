@@ -15,7 +15,7 @@ program
     .option('-o <path>', 'Output path', './')
     .option('-f <format>', 'Output format', 'png')
     .option('-t', 'Transparent output for png')
-    .option('-t', 'Transparent output for png')
+    .option('--scale <scale>', 'Scale for png')
     .option('--watch', 'Watch input file for changes')
     .option(
         '--width <pixels>',
@@ -59,6 +59,9 @@ function exportChanged() {
                 }
                 if (program.height) {
                     opts.push('--height', program.height)
+                }
+                if (program.scale) {
+                    opts.push('--scale', program.scale)
                 }
                 execFileSync(DrawIO, opts)
                 pageHash.set(name, h)
